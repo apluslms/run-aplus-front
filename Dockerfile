@@ -6,7 +6,7 @@ RUN apt-get update -qqy && apt-get install -qqy --no-install-recommends \
 
 WORKDIR /srv
 
-RUN git clone https://github.com/Aalto-LeTech/a-plus.git .
+RUN git clone --branch v1.2 https://github.com/Aalto-LeTech/a-plus.git .
 
 ADD local_settings.py .
 ADD up.sh .
