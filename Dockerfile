@@ -8,7 +8,7 @@ ENV CONTAINER_TYPE="aplus" \
 
 COPY rootfs /
 
-ARG BRANCH=v1.24.0
+ARG BRANCH=v1.25.0
 RUN : \
  && apt_install \
       python3-lxml \
