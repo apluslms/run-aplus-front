@@ -31,7 +31,7 @@ RUN : \
   # install requirements, remove the file, remove unrequired locales and tests
  && pip_install \
       -r requirements.txt \
-      "django-debug-toolbar >= 3.8.1" \
+      "django-debug-toolbar >= 6.1.0, < 7" \
       flower \
  && rm requirements.txt \
  && find /usr/local/lib/python* -type d -regex '.*/locale/[a-z_A-Z]+' -not -regex '.*/\(en\|fi\|sv\)' -print0 | xargs -0 rm -rf \
